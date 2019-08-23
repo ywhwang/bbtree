@@ -108,7 +108,7 @@ function remove(h, key, compare) {
         if (compare(key, h.key) === 0) {
             var x = min(h.right);
             h.key = x.key;
-            h.val = x.val;
+            h.value = x.value;
             h.right = removeMin(h.right);
 
         } else h.right = remove(h.right, key, compare);
